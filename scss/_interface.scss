@@ -107,7 +107,7 @@ footer {
     width: 1140px;
   }
 }
-@media(max-width:1280px){
+@media(min-width:1024px)and(max-width:1280px){
   .flats-container{
     width: 510px;
   }
@@ -132,7 +132,7 @@ footer {
   }
 }
 
-@media(max-width:1439px) {
+@media(min-width:1024px)and(max-width:1439px) {
   .nav-container{
     width: 200px;
     margin: 0 0 0 15px;
@@ -163,6 +163,28 @@ footer {
         .nav__item {
           margin-bottom: 3px;
         }
+      }
+    }
+  }
+}
+@media(max-width:1023px){
+  .container{
+    margin: 40px 15px;
+  }
+  .nav-container{
+    display: none;
+    position: absolute;
+  }
+  header{
+    height: 30px;
+    .social{
+      position: absolute;
+      bottom:50px;
+      right:25px;
+      width: 60px;
+      top:auto;
+      img{
+        height: 20px;
       }
     }
   }

@@ -197,3 +197,28 @@ footer{
     }
   }
 }
+@media(max-width:1023px){
+  header{
+    .header__title{
+      font-size: 18px;
+    }
+  }
+  .front{
+    .front__text{
+      font-size: 20px;
+    }
+    .front__title{
+      font-size: 36px;
+      line-height: 34px;
+    }
+    .front__button{
+      font-size: 16px;
+    }
+  }
+  footer{
+    .copyright,
+    .dis{
+      font-size: 8px;
+    }
+  }
+}
