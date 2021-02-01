@@ -1,0 +1,82 @@
+.front{
+  width: 73vw;
+  overflow-x: hidden;
+  height: 85vh;
+  position: relative;
+  .front-content{
+    z-index:2;
+    height: 100%;
+    max-width: 100%;
+    position: relative;
+    border-radius:35px;
+    background:linear-gradient(320.33deg, rgba(0, 0, 0, 0.5) 23.4%, rgba(255, 255, 255, 0) 62.7%);
+    .front__text,
+    .front__title,
+    .front__button{
+      position: absolute;
+      right:40px;
+    }
+    .front__text{
+      top:35px;
+      height: 150px;
+      width: 370px;
+      background: #3C6884;
+      border-radius:35px;
+      padding: 30px 0 0 30px;
+    }
+    .front__title{
+      bottom:140px;
+      width: 500px;
+      text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.5);
+    }
+    .front__button{
+      bottom:50px;
+      width: 300px;
+      height: 60px;
+      border:none;
+      background: #AA8D62;
+    }
+    .front__award{
+      margin: 25px 0 0 25px;
+    }
+  }
+  .front-slider{
+    z-index:1;
+    position: absolute;
+    top:0;
+    height: 100%;
+    max-width: 100%;
+    display: flex;
+    img{
+      border-radius: 34px;
+      height: 100%;
+      min-width: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+}
+@media(max-width:1439px){
+  .front{
+    .front-content{
+      .front__text,
+      .front__title,
+      .front__button{
+        right:25px;
+      }
+      .front__text{
+        width: 285px;
+        height: 120px;
+        padding: 25px 0 0 25px;
+      }
+      .front__title{
+        bottom:120px;
+      }
+      .front__button{
+        width: 240px;
+        height: 50px;
+        bottom:40px;
+      }
+    }
+  }
+}

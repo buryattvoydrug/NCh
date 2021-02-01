@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600;700;800;900&display=swap');
+@mixin mfont($fweight,$fsize,$fcolor){
+    font-family: 'Montserrat';
+    letter-spacing: -0.05em;
+    font-weight: $fweight;
+    font-size: $fsize;
+    color:$fcolor;
+}
+$black:#000;
+$white:#fff;
+$green:#1FB52E;
+$gray:#ccc;
+li{
+  list-style-type: none;
+}
+a{
+  color:inherit;
+  text-decoration: none;
+}
+header{
+  .header__title{
+    @include mfont(900,36px,$black);
+    text-transform: uppercase;
+  }
+  .phone{
+    @include mfont(800,28px,$black);
+  }
+}
+.front{
+  .front__text{
+    @include mfont(500,24px,$white);
+  }
+  .front__title{
+    @include mfont(900,68px,$white);
+    text-transform: uppercase;
+    text-align: right;
+    line-height: 95%;
+  }
+  .front__button{
+    @include mfont(500,20px,$white);
+  }
+}
+.flats{
+  .filter{
+    .filter__button,
+    .filter__input,
+    .filter__input::placeholder{
+      @include mfont(500,14px,$black);
+    }
+    .filter__subtitle{
+      @include mfont(600,18px,$black);
+    }
+    .border{
+      @include mfont(500,14px,$gray);
+    }
+  }
+  .flats-list{
+    .flat__item{
+      .fave__subtitle{
+        @include mfont(200,10px,$black);
+      }
+      .floor{
+        @include mfont(400,18px,$black);
+      }
+      .flat__title{
+        @include mfont(600,20px,$black);
+      }
+      .flat__finishing{
+        @include mfont(200,12px,$black);
+      }
+      .price{
+        @include mfont(600,36px,$black);
+      }
+    }
+  }
+}
+.pref__item{
+  @include mfont(500,10px,$green);
+}
+.single{
+  .prev__text{
+    @include mfont(600,12px,$black);
+  }
+  .pref__item{
+    font-size: 12px;
+  }
+  .number{
+    @include mfont(600,22px,$black);
+  }
+  .number__subtitle{
+    @include mfont(300,16px,$black);
+  }
+  .single__title{
+    @include mfont(800,36px,$black);
+    line-height: 34px;
+  }
+  .price{
+    @include mfont(300,42px,$black);
+  }
+  .finishing{
+    @include mfont(400,12px,$black);
+  }
+  .fave__subtitle{
+    @include mfont(275,16px,$black);
+  }
+  .single__button{
+    @include mfont(600,20px,$black);
+  }
+}
+nav{
+  .nav__item{
+    @include mfont(300,18px,$black);
+    strong{
+      @include mfont(600,28px,$black);
+    }
+  }
+}
+footer{
+  .copyright,
+  .dis{
+    @include mfont(275,12px,$black);
+  }
+}
+@media(max-width:1439px){
+  header{
+    .header__title{
+      font-size: 28px;
+    }
+    .phone{
+      font-size: 24px;
+    }
+  }
+  .front{
+    .front__text{
+      font-size: 18px;
+    }
+    .front__title{
+      font-size: 60px;
+    }
+    .front__button{
+      font-size: 18px;
+    }
+  }
+  nav{
+    .nav__item{
+      font-size: 16px;
+      strong{
+        font-size: 24px;
+      }
+    }
+  }
+  .flats{
+    .flats-list{
+      .flat__item{
+        .floor{
+          font-size: 14px;
+        }
+        .flat__title{
+          font-size: 18px;
+        }
+        .flat__finishing{
+          font-size: 10px;
+        }
+        .price{
+          font-size: 32px;
+        }
+      }
+    }
+  }
+}
+@media(max-width:1280px){
+  .single{
+    .pref__item{
+      font-size: 10px;
+    }
+    .number{
+      font-size: 16px;
+    }
+    .number__subtitle{
+      font-size: 12px;
+    }
+    .single__title{
+      font-size: 28px;
+      line-height: 26px;
+    }
+    .price{
+      font-size: 34px;
+    }
+    .finishing{
+      font-size: 10px;
+    }
+    .fave__subtitle{
+      font-size: 14px;
+    }
+    .single__button{
+      font-size: 14px;
+    }
+  }
+}

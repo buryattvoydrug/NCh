@@ -1,0 +1,101 @@
+.flats{
+  display: flex;
+  padding-bottom: 80px;
+  .filter{
+    .map{
+      width: 100%;
+    }
+    .filters{
+      margin-top: 20px;
+      .filters-block{
+        margin-bottom: 10px;
+        .filter__item{
+          width: 100%;
+          display: flex;
+          flex-wrap: wrap;
+          align-items: center;
+          .filter__button,
+          .filter__input{
+            height: 35px;
+            border:1px solid $gray;
+            border-radius:5px;
+            background:$white;
+          }
+          .filter__button{
+            display: flex;
+            align-items: center;
+            padding: 0 12px;
+            margin: 3px 3px 0 0;
+          }
+          .filter__button:first-child{
+            padding: 0 15px;
+            margin-right: 150px;
+          }
+          .filter__input{
+            text-align: center;
+            margin: 0 7px;
+          }
+          .filter__input.floor{
+            width: 45px; 
+          }
+          .filter__input.area{
+            width: 55px;
+          }
+          .filter__input.price{
+            width: 100px;
+          }
+        }
+        .filter__subtitle{
+          margin-bottom: 5px;
+        }
+      }
+    }
+  }
+  .flats-list{
+    .flat__item{
+      width: 270px;
+      margin:0 0 15px 15px;
+      padding: 30px 20px;
+      border-radius: 10px;
+      background:$white;
+      .flat__img{
+        margin: 0 auto;
+        width: 200px;
+        height: 200px;
+        display: flex;
+        align-items: center;
+        img{
+          width: 100%;
+        }
+      }
+      .fave{
+        display: flex;
+        align-items: center;
+        margin: 17px 0 9px;
+        img{
+          margin-right: 4px;
+        }
+      }
+      .prefs{
+        margin-top: 8px;
+      }
+    }
+  }
+}
+@media(max-width:1439px){
+  .flats{
+    .flats-list{
+      .flat__item{
+        width: 250px;
+        margin: 0 0 5px 5px;
+        .flat__img{
+          width: 180px;
+          height: 180px;
+        }
+        .fave{
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+}
