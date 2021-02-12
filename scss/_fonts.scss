@@ -107,6 +107,64 @@ header{
     @include mfont(600,20px,$black);
   }
 }
+.about-top{
+  .about-top__title{
+    @include mfont(900,8.8vw,$black);
+  }
+}
+.concept{
+  .concept__item{
+    .concept__subtitle{
+      @include mfont(800,48px,$black);
+    }
+    .concept__text{
+      @include mfont(300,24px,$black);
+    }
+  }
+}
+.about-title{
+  .about__title{
+    @include mfont(800,128px,$black);
+  }
+  .title__number{
+    @include mfont(800,520px,$black);
+    background: linear-gradient(180deg, rgba(83, 50, 50, 0.25) 0%, rgba(83, 50, 50, 0.119792) 52.08%, rgba(83, 50, 50, 0) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+.locate{
+  .locate__subtitle{
+    @include mfont(275,24px,$black);
+  }
+}
+.plan{
+  .plan__subtitle{
+    @include mfont(500,96px,$black);
+  }
+  .plan__items{
+    @include mfont(300,78px,$black);
+    strong{
+      @include mfont(500,128px,$black);
+    }
+  }
+}
+.news{
+  .news__title{
+    @include mfont(800,114px,$white);
+  }
+  .news__item{
+    .news-block__subtitle{
+      @include mfont(600,32px,$black);
+    }
+    .news-block__text{
+      @include mfont(300,24px,$black);
+    }
+    .news-block__date{
+      @include mfont(600,28px,rgba(0, 0, 0, 0.5));
+    }
+  }
+}
 nav{
   .nav__item{
     @include mfont(300,18px,$black);
@@ -196,6 +254,61 @@ footer{
       font-size: 14px;
     }
   }
+  .about-top{
+    .about-top__title{
+      font-size:8.8vw;
+    }
+  }
+  .concept{
+    .concept__item{
+      .concept__subtitle{
+        font-size:32px;
+      }
+      .concept__text{
+        font-size:16px;
+      }
+    }
+  }
+  .about-title{
+    .about__title{
+      font-size:82px;
+    }
+    .title__number{
+      font-size:320px;
+    }
+  }
+  .locate{
+    .locate__subtitle{
+      font-size:16px;
+    }
+  }
+  .plan{
+    .plan__subtitle{
+      font-size:16px;
+    }
+    .plan__items{
+      font-size:42px;
+      strong{
+        font-size:64px;
+      }
+    }
+  }
+  .news{
+    .news__title{
+      font-size:82px;
+    }
+    .news__item{
+      .news-block__subtitle{
+        font-size:22px;
+      }
+      .news-block__text{
+        font-size:16px;
+      }
+      .news-block__date{
+        font-size:20px;
+      }
+    }
+  }
 }
 @media(max-width:1023px){
   header{
@@ -219,6 +332,148 @@ footer{
     .copyright,
     .dis{
       font-size: 8px;
+    }
+  }
+}
+@media(min-width:1281px)and(max-width:1440px){
+  .about-top{
+    .about-top__title{
+      font-size:8.8vw;
+    }
+  }
+  .concept{
+    .concept__item{
+      .concept__subtitle{
+        font-size:36px;
+      }
+      .concept__text{
+        font-size:18px;
+      }
+    }
+  }
+  .about-title{
+    .about__title{
+      font-size:94px;
+    }
+    .title__number{
+      font-size:380px;
+    }
+  }
+  .locate{
+    .locate__subtitle{
+      font-size:16px;
+    }
+  }
+  .plan{
+    .plan__subtitle{
+      font-size:20px;
+    }
+    .plan__items{
+      font-size:54px;
+      strong{
+        font-size:94px;
+      }
+    }
+  }
+  .news{
+    .news__title{
+      font-size:94px;
+    }
+    .news__item{
+      .news-block__subtitle{
+        font-size:24px;
+      }
+      .news-block__text{
+        font-size:18px;
+      }
+      .news-block__date{
+        font-size:22px;
+      }
+    }
+  }
+}
+@media(min-width:1441px){
+  header{
+    .header__title{
+      font-size: 52px;
+    }
+    .phone{
+      font-size: 30px;
+    }
+  }
+  .about-top{
+    .about-top__title{
+      font-size:8.8vw;
+    }
+  }
+  .concept{
+    .concept__item{
+      .concept__subtitle{
+        font-size:48px;
+      }
+      .concept__text{
+        font-size:24px;
+      }
+    }
+  }
+  .about-title{
+    .about__title{
+      font-size:128px;
+    }
+    .title__number{
+      font-size:520px;
+    }
+  }
+  .locate{
+    .locate__subtitle{
+      font-size:24px;
+    }
+  }
+  .plan{
+    .plan__subtitle{
+      font-size:94px;
+    }
+    .plan__items{
+      font-size:78px;
+      strong{
+        font-size:128px;
+      }
+    }
+  }
+  .news{
+    .news__title{
+      font-size:32px;
+    }
+    .news__item{
+      .news-block__subtitle{
+        font-size:32px;
+      }
+      .news-block__text{
+        font-size:24px;
+      }
+      .news-block__date{
+        font-size:28px;
+      }
+    }
+  }
+}
+@media(min-width:1441px)and(max-width:1600px){
+  .concept{
+    .concept__item{
+      .concept__subtitle{
+        font-size:42px;
+      }
+      .concept__text{
+        font-size:16px;
+      }
+    }
+    .about-title{
+      .about__title{
+        font-size:94px;
+      }
+      .title__number{
+        font-size:380px;
+      }
     }
   }
 }
