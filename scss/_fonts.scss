@@ -1,479 +1,593 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600;700;800;900&display=swap');
-@mixin mfont($fweight,$fsize,$fcolor){
-    font-family: 'Montserrat';
-    letter-spacing: -0.05em;
-    font-weight: $fweight;
-    font-size: $fsize;
-    color:$fcolor;
+
+@mixin mfont($fweight, $fsize, $fcolor) {
+  font-family: 'Montserrat';
+  letter-spacing: -0.05em;
+  font-weight: $fweight;
+  font-size: $fsize;
+  color: $fcolor;
 }
+
 $black:#000;
 $white:#fff;
 $green:#1FB52E;
 $gray:#ccc;
-li{
+
+li {
   list-style-type: none;
 }
-a{
-  color:inherit;
+
+a {
+  color: inherit;
   text-decoration: none;
 }
-header{
-  .header__title{
-    @include mfont(900,36px,$black);
+
+header {
+  .header__title {
+    @include mfont(900, 36px, $black);
     text-transform: uppercase;
   }
-  .phone{
-    @include mfont(800,28px,$black);
+
+  .phone {
+    @include mfont(800, 28px, $black);
   }
 }
-.front{
-  .front__text{
-    @include mfont(500,24px,$white);
+
+.front {
+  .front__text {
+    @include mfont(500, 24px, $white);
   }
-  .front__title{
-    @include mfont(900,68px,$white);
+
+  .front__title {
+    @include mfont(900, 68px, $white);
     text-transform: uppercase;
     text-align: right;
     line-height: 95%;
   }
-  .front__button{
-    @include mfont(500,20px,$white);
+
+  .front__button {
+    @include mfont(500, 20px, $white);
   }
 }
-.flats{
-  .filter{
+
+.flats {
+  .filter {
+
     .filter__button,
     .filter__input,
-    .filter__input::placeholder{
-      @include mfont(500,14px,$black);
+    .filter__input::placeholder {
+      @include mfont(500, 14px, $black);
     }
-    .filter__subtitle{
-      @include mfont(600,18px,$black);
+
+    .filter__subtitle {
+      @include mfont(600, 18px, $black);
     }
-    .border{
-      @include mfont(500,14px,$gray);
+
+    .border {
+      @include mfont(500, 14px, $gray);
     }
   }
-  .flats-list{
-    .flat__item{
-      .fave__subtitle{
-        @include mfont(200,10px,$black);
+
+  .flats-list {
+    .flat__item {
+      .fave__subtitle {
+        @include mfont(200, 10px, $black);
       }
-      .floor{
-        @include mfont(400,18px,$black);
+
+      .floor {
+        @include mfont(400, 18px, $black);
       }
-      .flat__title{
-        @include mfont(600,20px,$black);
+
+      .flat__title {
+        @include mfont(600, 20px, $black);
       }
-      .flat__finishing{
-        @include mfont(200,12px,$black);
+
+      .flat__finishing {
+        @include mfont(200, 12px, $black);
       }
-      .price{
-        @include mfont(600,36px,$black);
+
+      .price {
+        @include mfont(600, 36px, $black);
       }
     }
   }
 }
-.pref__item{
-  @include mfont(500,10px,$green);
+
+.pref__item {
+  @include mfont(500, 10px, $green);
 }
-.single{
-  .prev__text{
-    @include mfont(600,12px,$black);
+
+.single {
+  .prev__text {
+    @include mfont(600, 12px, $black);
   }
-  .pref__item{
+
+  .pref__item {
     font-size: 12px;
   }
-  .number{
-    @include mfont(600,22px,$black);
+
+  .number {
+    @include mfont(600, 22px, $black);
   }
-  .number__subtitle{
-    @include mfont(300,16px,$black);
+
+  .number__subtitle {
+    @include mfont(300, 16px, $black);
   }
-  .single__title{
-    @include mfont(800,36px,$black);
+
+  .single__title {
+    @include mfont(800, 36px, $black);
     line-height: 34px;
   }
-  .price{
-    @include mfont(300,42px,$black);
+
+  .price {
+    @include mfont(300, 42px, $black);
   }
-  .finishing{
-    @include mfont(400,12px,$black);
+
+  .finishing {
+    @include mfont(400, 12px, $black);
   }
-  .fave__subtitle{
-    @include mfont(275,16px,$black);
+
+  .fave__subtitle {
+    @include mfont(275, 16px, $black);
   }
-  .single__button{
-    @include mfont(600,20px,$black);
+
+  .single__button {
+    @include mfont(600, 20px, $black);
   }
 }
-.about-top{
-  .about-top__title{
-    @include mfont(900,8.8vw,$black);
+
+.about-top {
+  .about-top__title {
+    @include mfont(900, 8.8vw, $black);
   }
 }
-.concept{
-  .concept__item{
-    .concept__subtitle{
-      @include mfont(800,48px,$black);
+
+.concept {
+  .concept__item {
+    .concept__subtitle {
+      @include mfont(800, 48px, $black);
     }
-    .concept__text{
-      @include mfont(300,24px,$black);
+
+    .concept__text {
+      @include mfont(300, 24px, $black);
     }
   }
 }
-.about-title{
-  .about__title{
-    @include mfont(800,128px,$black);
+
+.about-title {
+  .about__title {
+    @include mfont(800, 128px, $black);
   }
-  .title__number{
-    @include mfont(800,520px,$black);
+
+  .title__number {
+    @include mfont(800, 520px, $black);
     background: linear-gradient(180deg, rgba(83, 50, 50, 0.25) 0%, rgba(83, 50, 50, 0.119792) 52.08%, rgba(83, 50, 50, 0) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
 }
-.locate{
-  .locate__subtitle{
-    @include mfont(275,24px,$black);
+
+.locate {
+  .locate__subtitle {
+    @include mfont(275, 24px, $black);
   }
 }
-.plan{
-  .plan__subtitle{
-    @include mfont(500,96px,$black);
+
+.plan {
+  .plan__subtitle {
+    @include mfont(500, 96px, $black);
   }
-  .plan__items{
-    @include mfont(300,78px,$black);
-    strong{
-      @include mfont(500,128px,$black);
-    }
-  }
-}
-.news{
-  .news__title{
-    @include mfont(800,114px,$white);
-  }
-  .news__item{
-    .news-block__subtitle{
-      @include mfont(600,32px,$black);
-    }
-    .news-block__text{
-      @include mfont(300,24px,$black);
-    }
-    .news-block__date{
-      @include mfont(600,28px,rgba(0, 0, 0, 0.5));
+
+  .plan__items {
+    @include mfont(300, 78px, $black);
+
+    strong {
+      @include mfont(500, 128px, $black);
     }
   }
 }
-nav{
-  .nav__item{
-    @include mfont(300,18px,$black);
-    strong{
-      @include mfont(600,28px,$black);
+
+.news {
+  .news__title {
+    @include mfont(800, 114px, $white);
+  }
+
+  .news__item {
+    .news-block__subtitle {
+      @include mfont(600, 32px, $black);
+    }
+
+    .news-block__text {
+      @include mfont(300, 24px, $black);
+    }
+
+    .news-block__date {
+      @include mfont(600, 28px, rgba(0, 0, 0, 0.5));
     }
   }
 }
-footer{
+
+nav {
+  .nav__item {
+    @include mfont(300, 18px, $black);
+
+    strong {
+      @include mfont(600, 28px, $black);
+    }
+  }
+}
+
+footer {
+
   .copyright,
-  .dis{
-    @include mfont(275,12px,$black);
+  .dis {
+    @include mfont(275, 12px, $black);
   }
 }
-@media(max-width:1439px){
-  header{
-    .header__title{
+
+@media(max-width:1439px) {
+  header {
+    .header__title {
       font-size: 28px;
     }
-    .phone{
+
+    .phone {
       font-size: 24px;
     }
   }
-  .front{
-    .front__text{
+
+  .front {
+    .front__text {
       font-size: 18px;
     }
-    .front__title{
+
+    .front__title {
       font-size: 60px;
     }
-    .front__button{
+
+    .front__button {
       font-size: 18px;
     }
   }
-  nav{
-    .nav__item{
+
+  nav {
+    .nav__item {
       font-size: 16px;
-      strong{
+
+      strong {
         font-size: 24px;
       }
     }
   }
-  .flats{
-    .flats-list{
-      .flat__item{
-        .floor{
+
+  .flats {
+    .flats-list {
+      .flat__item {
+        .floor {
           font-size: 14px;
         }
-        .flat__title{
+
+        .flat__title {
           font-size: 18px;
         }
-        .flat__finishing{
+
+        .flat__finishing {
           font-size: 10px;
         }
-        .price{
+
+        .price {
           font-size: 32px;
         }
       }
     }
   }
 }
-@media(max-width:1280px){
-  .single{
-    .pref__item{
+
+@media(max-width:1280px) {
+  .single {
+    .pref__item {
       font-size: 10px;
     }
-    .number{
+
+    .number {
       font-size: 16px;
     }
-    .number__subtitle{
+
+    .number__subtitle {
       font-size: 12px;
     }
-    .single__title{
+
+    .single__title {
       font-size: 28px;
       line-height: 26px;
     }
-    .price{
+
+    .price {
       font-size: 34px;
     }
-    .finishing{
+
+    .finishing {
       font-size: 10px;
     }
-    .fave__subtitle{
+
+    .fave__subtitle {
       font-size: 14px;
     }
-    .single__button{
+
+    .single__button {
       font-size: 14px;
     }
   }
-  .about-top{
-    .about-top__title{
-      font-size:8.8vw;
+
+  .about-top {
+    .about-top__title {
+      font-size: 8.8vw;
     }
   }
-  .concept{
-    .concept__item{
-      .concept__subtitle{
-        font-size:32px;
+
+  .concept {
+    .concept__item {
+      .concept__subtitle {
+        font-size: 32px;
       }
-      .concept__text{
-        font-size:16px;
-      }
-    }
-  }
-  .about-title{
-    .about__title{
-      font-size:82px;
-    }
-    .title__number{
-      font-size:320px;
-    }
-  }
-  .locate{
-    .locate__subtitle{
-      font-size:16px;
-    }
-  }
-  .plan{
-    .plan__subtitle{
-      font-size:16px;
-    }
-    .plan__items{
-      font-size:42px;
-      strong{
-        font-size:64px;
+
+      .concept__text {
+        font-size: 16px;
       }
     }
   }
-  .news{
-    .news__title{
-      font-size:82px;
+
+  .about-title {
+    .about__title {
+      font-size: 82px;
     }
-    .news__item{
-      .news-block__subtitle{
-        font-size:22px;
+
+    .title__number {
+      font-size: 320px;
+    }
+  }
+
+  .locate {
+    .locate__subtitle {
+      font-size: 16px;
+    }
+  }
+
+  .plan {
+    .plan__subtitle {
+      font-size: 16px;
+    }
+
+    .plan__items {
+      font-size: 42px;
+
+      strong {
+        font-size: 64px;
       }
-      .news-block__text{
-        font-size:16px;
+    }
+  }
+
+  .news {
+    .news__title {
+      font-size: 82px;
+    }
+
+    .news__item {
+      .news-block__subtitle {
+        font-size: 22px;
       }
-      .news-block__date{
-        font-size:20px;
+
+      .news-block__text {
+        font-size: 16px;
+      }
+
+      .news-block__date {
+        font-size: 20px;
       }
     }
   }
 }
-@media(max-width:1023px){
-  header{
-    .header__title{
+
+@media(max-width:1023px) {
+  header {
+    .header__title {
       font-size: 18px;
     }
   }
-  .front{
-    .front__text{
+
+  .front {
+    .front__text {
       font-size: 20px;
     }
-    .front__title{
+
+    .front__title {
       font-size: 36px;
       line-height: 34px;
     }
-    .front__button{
+
+    .front__button {
       font-size: 16px;
     }
   }
-  footer{
+
+  footer {
+
     .copyright,
-    .dis{
+    .dis {
       font-size: 8px;
     }
   }
 }
-@media(min-width:1281px)and(max-width:1440px){
-  .about-top{
-    .about-top__title{
-      font-size:8.8vw;
+
+@media(min-width:1281px)and(max-width:1440px) {
+  .about-top {
+    .about-top__title {
+      font-size: 8.8vw;
     }
   }
-  .concept{
-    .concept__item{
-      .concept__subtitle{
-        font-size:36px;
+
+  .concept {
+    .concept__item {
+      .concept__subtitle {
+        font-size: 36px;
       }
-      .concept__text{
-        font-size:18px;
-      }
-    }
-  }
-  .about-title{
-    .about__title{
-      font-size:94px;
-    }
-    .title__number{
-      font-size:380px;
-    }
-  }
-  .locate{
-    .locate__subtitle{
-      font-size:16px;
-    }
-  }
-  .plan{
-    .plan__subtitle{
-      font-size:20px;
-    }
-    .plan__items{
-      font-size:54px;
-      strong{
-        font-size:94px;
+
+      .concept__text {
+        font-size: 18px;
       }
     }
   }
-  .news{
-    .news__title{
-      font-size:94px;
+
+  .about-title {
+    .about__title {
+      font-size: 94px;
     }
-    .news__item{
-      .news-block__subtitle{
-        font-size:24px;
+
+    .title__number {
+      font-size: 380px;
+    }
+  }
+
+  .locate {
+    .locate__subtitle {
+      font-size: 16px;
+    }
+  }
+
+  .plan {
+    .plan__subtitle {
+      font-size: 20px;
+    }
+
+    .plan__items {
+      font-size: 54px;
+
+      strong {
+        font-size: 94px;
       }
-      .news-block__text{
-        font-size:18px;
+    }
+  }
+
+  .news {
+    .news__title {
+      font-size: 94px;
+    }
+
+    .news__item {
+      .news-block__subtitle {
+        font-size: 24px;
       }
-      .news-block__date{
-        font-size:22px;
+
+      .news-block__text {
+        font-size: 18px;
+      }
+
+      .news-block__date {
+        font-size: 22px;
       }
     }
   }
 }
-@media(min-width:1441px){
-  header{
-    .header__title{
+
+@media(min-width:1441px) {
+  header {
+    .header__title {
       font-size: 52px;
     }
-    .phone{
+
+    .phone {
       font-size: 30px;
     }
   }
-  .about-top{
-    .about-top__title{
-      font-size:8.8vw;
+
+  .about-top {
+    .about-top__title {
+      font-size: 8.8vw;
     }
   }
-  .concept{
-    .concept__item{
-      .concept__subtitle{
-        font-size:48px;
+
+  .concept {
+    .concept__item {
+      .concept__subtitle {
+        font-size: 48px;
       }
-      .concept__text{
-        font-size:24px;
-      }
-    }
-  }
-  .about-title{
-    .about__title{
-      font-size:128px;
-    }
-    .title__number{
-      font-size:520px;
-    }
-  }
-  .locate{
-    .locate__subtitle{
-      font-size:24px;
-    }
-  }
-  .plan{
-    .plan__subtitle{
-      font-size:94px;
-    }
-    .plan__items{
-      font-size:78px;
-      strong{
-        font-size:128px;
+
+      .concept__text {
+        font-size: 24px;
       }
     }
   }
-  .news{
-    .news__title{
-      font-size:32px;
+
+  .about-title {
+    .about__title {
+      font-size: 128px;
     }
-    .news__item{
-      .news-block__subtitle{
-        font-size:32px;
+
+    .title__number {
+      font-size: 520px;
+    }
+  }
+
+  .locate {
+    .locate__subtitle {
+      font-size: 24px;
+    }
+  }
+
+  .plan {
+    .plan__subtitle {
+      font-size: 94px;
+    }
+
+    .plan__items {
+      font-size: 78px;
+
+      strong {
+        font-size: 128px;
       }
-      .news-block__text{
-        font-size:24px;
+    }
+  }
+
+  .news {
+    .news__title {
+      font-size: 32px;
+    }
+
+    .news__item {
+      .news-block__subtitle {
+        font-size: 32px;
       }
-      .news-block__date{
-        font-size:28px;
+
+      .news-block__text {
+        font-size: 24px;
+      }
+
+      .news-block__date {
+        font-size: 28px;
       }
     }
   }
 }
-@media(min-width:1441px)and(max-width:1600px){
-  .concept{
-    .concept__item{
-      .concept__subtitle{
-        font-size:42px;
+
+@media(min-width:1441px)and(max-width:1600px) {
+  .concept {
+    .concept__item {
+      .concept__subtitle {
+        font-size: 42px;
       }
-      .concept__text{
-        font-size:16px;
+
+      .concept__text {
+        font-size: 16px;
       }
     }
-    .about-title{
-      .about__title{
-        font-size:94px;
-      }
-      .title__number{
-        font-size:380px;
-      }
+  }
+  .about-title {
+    .about__title {
+      font-size: 94px;
+    }
+
+    .title__number {
+      font-size: 380px;
     }
   }
 }
