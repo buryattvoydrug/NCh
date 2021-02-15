@@ -4,6 +4,9 @@
   justify-content: center;
   position: relative;
 }
+body::before{
+  height: 500vh;
+}
 .flats-container {
   display: flex;
   flex-wrap: wrap;

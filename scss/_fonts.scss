@@ -550,7 +550,7 @@ footer {
 
   .news {
     .news__title {
-      font-size: 32px;
+      font-size: 114px;
     }
 
     .news__item {
@@ -588,6 +588,18 @@ footer {
 
     .title__number {
       font-size: 380px;
+    }
+  }
+  .news{
+    .news__title{
+      font-size: 94px;
+    }
+  }
+}
+@media(min-width:1281px)and(max-width:1440px){
+  .news{
+    .news__title{
+      font-size: 82px;
     }
   }
 }
