@@ -91,8 +91,6 @@ footer {
   }
 }
 @media(min-width:1024px)and(max-width:1439px) {
-  
-
   nav {
     .nav {
       .nav-block {
@@ -106,9 +104,34 @@ footer {
   }
 }
 @media(max-width:1023px){
-  .nav-container{
-    display: none;
-    position: absolute;
+  nav{
+    opacity: 0;
+    position: fixed;
+    top:80px;
+    width: 100vw;
+    z-index: 10;
+    .nav-block{
+      ul.asd{
+        display: flex;
+        width: 250px;
+        flex-wrap: wrap;
+        li{
+          margin: 0 15px 0 0;
+        }
+      }
+    }
   }
-  
+  .footer-nav{
+    padding: 20px 0;
+    .nav{
+      display: flex;
+      flex-wrap: wrap;
+      li{
+        margin: 0 15px 0 0;
+      }
+    }
+  }
+  .background{
+    background-size:700%;
+  }
 }

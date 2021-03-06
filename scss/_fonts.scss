@@ -276,7 +276,11 @@ footer {
     @include mfont(275, 12px, $black);
   }
 }
-
+.filter__button,
+.filter-bottom__button,
+.flats__count{
+  @include mfont(600,14px,$black);
+}
 @media(max-width:1439px) {
   header {
     .header__title {
@@ -342,7 +346,6 @@ footer {
     }
   }
 }
-
 @media(max-width:1280px) {
   .single {
     .pref__item {
@@ -482,8 +485,7 @@ footer {
     }
   }
 }
-
-@media(max-width:1023px) {
+@media(max-width:1023px) {  
   header {
     .header__title {
       font-size: 18px;
@@ -504,7 +506,24 @@ footer {
       font-size: 16px;
     }
   }
-
+  nav{
+    opacity: 1;
+    .nav__item{
+      line-height: 70%;
+      strong{
+        @include mfont(700,32px,$black);
+        line-height: 100%;
+      }
+    }
+  }
+  .footer-nav{
+    .nav__item{
+      strong{
+        @include mfont(700,24px,$black);
+        line-height: 100%;
+      }
+    }
+  }
   footer {
 
     .copyright,
@@ -512,77 +531,76 @@ footer {
       font-size: 8px;
     }
   }
-}
-
-@media(min-width:1281px)and(max-width:1440px) {
-  .top {
-    .top__title {
-      font-size: 8.8vw;
-    }
-  }
-
-  .concept {
-    .concept__item {
-      .concept__subtitle {
-        font-size: 36px;
+  .flats {
+    .filter {
+  
+      .filter__button,
+      .filter__input,
+      .filter__input::placeholder {
+        font-size: 20px;
       }
-
-      .concept__text {
-        font-size: 18px;
+  
+      .filter__subtitle {
+        font-size: 25px;
+      }
+  
+      .border {
+        font-size: 20px;
       }
     }
-  }
-
-  .about-title {
-    .about__title {
-      font-size: 94px;
+  
+    .flats-list {
+      .flat__item {
+        .fave__subtitle {
+          font-size: 14px;
+        }
+  
+        .floor {
+          font-size: 16px;
+        }
+  
+        .flat__title {
+          font-size: 18px;
+        }
+  
+        .flat__finishing {
+          font-size: 11px;
+        }
+  
+        .price {
+          font-size: 20px;
+        }
+      }
     }
-
-    .title__number {
-      font-size: 380px;
-    }
   }
-
-  .locate {
-    .locate__subtitle {
+  .single {
+    .pref__item {
+      font-size: 10px;
+    }
+  
+    .number {
+      font-size: 16px;
+    }
+  
+    .number__subtitle {
+      font-size: 11px;
+    }
+  
+    .single__title {
+      font-size: 28px;
+    }
+  
+    .price {
+      font-size: 36px;
+    }
+  
+    .fave__subtitle {
+    }
+  
+    .single__button {
       font-size: 16px;
     }
   }
-
-  .plan {
-    .plan__subtitle {
-      font-size: 20px;
-    }
-
-    .plan__items {
-      font-size: 54px;
-
-      strong {
-        font-size: 94px;
-      }
-    }
-  }
-
-  .news {
-    .news__title {
-      font-size: 94px;
-    }
-
-    .news__item {
-      .news-block__subtitle {
-        font-size: 24px;
-      }
-
-      .news-block__text {
-        font-size: 18px;
-      }
-
-      .news-block__date {
-        font-size: 22px;
-      }
-    }
-  }
-  
 }
 @media(min-width:1281px)and(max-width:1919px){
   .finishing{
@@ -681,7 +699,6 @@ footer {
     }
   }
 }
-
 @media(min-width:1441px)and(max-width:1600px) {
   .concept {
     .concept__item {
@@ -710,6 +727,73 @@ footer {
   }
 }
 @media(min-width:1281px)and(max-width:1440px){
+  .top {
+    .top__title {
+      font-size: 8.8vw;
+    }
+  }
+
+  .concept {
+    .concept__item {
+      .concept__subtitle {
+        font-size: 36px;
+      }
+
+      .concept__text {
+        font-size: 18px;
+      }
+    }
+  }
+
+  .about-title {
+    .about__title {
+      font-size: 94px;
+    }
+
+    .title__number {
+      font-size: 380px;
+    }
+  }
+
+  .locate {
+    .locate__subtitle {
+      font-size: 16px;
+    }
+  }
+
+  .plan {
+    .plan__subtitle {
+      font-size: 20px;
+    }
+
+    .plan__items {
+      font-size: 54px;
+
+      strong {
+        font-size: 94px;
+      }
+    }
+  }
+
+  .news {
+    .news__title {
+      font-size: 94px;
+    }
+
+    .news__item {
+      .news-block__subtitle {
+        font-size: 24px;
+      }
+
+      .news-block__text {
+        font-size: 18px;
+      }
+
+      .news-block__date {
+        font-size: 22px;
+      }
+    }
+  }
   .news{
     .news__title{
       font-size: 82px;

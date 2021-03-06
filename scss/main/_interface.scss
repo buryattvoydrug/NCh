@@ -69,20 +69,52 @@ header{
 }
 @media(max-width:1023px){
   .container{
-    margin: 40px 15px;
+    margin: 3vh 15px 2vh;
+  }
+  .main-container{
+    width: 100%;
   }
   header{
     height: 30px;
-    .social{
-      position: absolute;
-      bottom:50px;
-      right:25px;
-      width: 60px;
-      top:auto;
-      img{
-        height: 20px;
+    .nav-button{
+      padding-right: 10px;
+      display: flex;
+      flex-direction: column;
+      transition: all .7s;
+      .nav__button{
+        width: 20px;
+        height: 2px;
+        margin: 2.5px 0;
+        background:$black;
+        transition: all .7s;
       }
     }
+    .nav-button_active{
+      .nav__button:first-child{
+        transform: rotate(45deg) translate(5px,5px);
+      }
+      .nav__button:nth-child(2){
+        opacity: 0;
+      }
+      .nav__button:last-child{
+        transform: rotate(-45deg) translate(5px,-5px);
+      }
+    }
+  }
+  .social{
+    padding:10px;
+    float:right;
+    width: 100px;
+    display: flex;
+    justify-content: space-between;
+    top:auto;
+    img{
+      height: 30px;
+    }
+  }
+  footer{
+    padding-top:10px;
+    flex-direction: column;
   }
 }
 @media(min-width:1024px)and(max-width:1439px) {
